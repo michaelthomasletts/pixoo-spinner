@@ -1,0 +1,44 @@
+[project]
+name = "pixoo-spinner"
+version = "0.0.1"
+description = "A basic Python app for spinning an image and gradiating its color on a Pixoo 64 device."
+authors = [
+    {name = "Mike Letts"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pillow (>=11.2.1,<12.0.0)",
+    "pixoo1664 (>=1.0.2,<2.0.0)",
+    "click (>=8.2.0,<9.0.0)"
+]
+keywords = [
+    "pixoo",
+    "pixoo1664",
+    "pixoo 64",
+    "divoom",
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+isort = "^6.0.1"
+
+[tool.black]
+line-length = 79
+target-version = ["py310"]
+verbose = true
+
+[tool.isort]
+line_length = 79
+ensure_newline_before_comments = true
+use_parentheses = true
+include_trailing_comma = true
+multi_line_output = 3
+
+[tool.poetry.scripts]
+pixoo-spinner = "pixoo_spinner.cli:run"
