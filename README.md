@@ -10,7 +10,8 @@ First of all, [the Divoom app](https://apps.apple.com/us/app/divoom-pixel-art-co
 
 ## Disclaimers
 
-**I don't recommend using this code for any images except those containing a basic symbol**, e.g. peace sign, crucifix, shield of David, etc. You will be sorely disappointed if you pass through an image of, say, Luigi or Mario or whatever. That's not what this package is for. In those cases, just use the Divoom app instead!
+- **I don't recommend using this code for any images except those containing a basic symbol**, e.g. peace sign, crucifix, shield of David, etc. You will be sorely disappointed if you pass through an image of, say, Luigi or Mario or whatever. That's not what this package is for. In those cases, just use the Divoom app instead!
+- I don't plan on adding this package into PyPI any time soon. Reason being: this package is _incredibly_ basic. Too basic. Until I add more features that make it worthwhile -- no indexing. Consequently, that means you'll need to clone this repo and either create your own Python script or generate the wheel file yourself (recommended).
 
 ## Requirements
 
